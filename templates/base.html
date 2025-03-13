@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIUUT 2025 | {% block title %}{% endblock %}</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    {% include 'shared/header.html' %}
+    <div class="px-6 py-2 flex gap-4">
+        {% include 'shared/menu.html' %}
+        <main class="container">
+            {% block content %}
+            {% endblock %}
+        </main>
+    </div>
+</body>
+</html>
